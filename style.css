@@ -1,53 +1,145 @@
+* { 
+    color: #d39f3e;
+    font-family: 'Carter One', cursive;
+}
+
 body {
     margin: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #131313;
+    padding: 10px;
+    background-image: url("images/fondo-libros.png");
 }
 
 nav {
     display: flex;
-    background-color: yellow;
-    margin: 10px;
+    background-color: #00000057;
+    color: #d39f3e;
     line-height: 70px;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     flex-wrap: wrap;
     box-shadow: 0 0 5px black inset;
+    justify-content: space-between;
 }
 
-nav button {
+nav h1 {
+    font-size: 40px;
+    line-height: 70px;
+    margin: 0;
+}
+
+nav img {
+    width: 70px;
+    position: absolute;
+    left: 260px;
+}
+
+nav div button {
     height: 40px;
     width: 100px;
     margin-right: 20px;
     background-color: black;
     border: none;
     border-radius: 0;
-    color: yellow;
+    color: #d39f3e;
     font-weight: 700;
     font-size: large;
     box-shadow: 2px 2px 5px black;
 }
 
 section {
-    width: 72%;
+    width: 100%;
     height: 700px;
-    background-color: yellow;
-    box-sizing: border-box;
+    background-color: #00000057;
     box-shadow: 0 0 5px black inset;
-    margin-left: 10px;
-    float: left;
-    overflow: scroll y;
+    margin: 10px 0 0 0;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-aside {
-    width: 25%;
-    height: 700px;
-    background-color: yellow;
-    box-sizing: border-box;
-    box-shadow: 0 0 5px black inset;
-    float: right;
-    margin-right: 10px;
-    overflow: scroll y;
+section div {
+    min-width: 275px;
+    height: 275px;
+    background-color: rgba(0, 0, 0, 0.712);
+    margin: 0 20px;
+    padding: 10px;
+}
+
+section div h2 {
+    text-align: justify;
+    border-bottom: 1px solid #d39f3e; 
+    padding-bottom: 10px;
+}
+
+section div button {
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    background-color: black;
+    border: 1px solid #d39f3e;
+    border-radius: 0;
+    color: #d39f3e;
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*FORMULARIO PARA AGREGAR LIBROS*/
+
+section section {
+    margin: auto;
+    width: 450px;
+    height: 500px;
+    background: black;
+    color: #d39f3e;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+section section h2 {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-bottom: 2px solid #d39f3e;
+    margin: 0;
+    padding: 30px;
+}
+
+section section h3 {
+    height: 30px;
+    line-height: 30px;
+    width: 30%;
+    margin: 0;
+}
+
+section section input {
+    height: 30px;
+    line-height: 30px;
+    width: 60%;
+    background: black;  
+}
+
+section section .isRead {
+    width: 30px;
+    height: 20px;
+    margin-right: 250px;
+    background-color: #d39f3e;
+}
+
+section section button {
+    height: 40px;
+    width: 100px;
+    margin: 0 40px;
+    background-color: black;
+    border: 1px solid #d39f3e;
+    border-radius: 0;
+    color: #d39f3e;
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 2px 2px 5px black;
 }
